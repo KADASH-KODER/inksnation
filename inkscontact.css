@@ -1,0 +1,49 @@
+
+
+
+#contact{
+    position: relative;
+    width: 100vw;
+    margin-top: 550px;
+}
+
+#contact h1{
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+
+
+#contact h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+#contact p{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+
+
+    #contact{
+        position: relative;
+        width: 100vw;
+        margin-top:-100px;
+    }
+
+}

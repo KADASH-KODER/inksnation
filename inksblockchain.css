@@ -1,0 +1,26 @@
+
+#bha{
+    margin-bottom: 20px;    
+    height:auto;
+    width: 100vw;
+	color: #333;
+	
+    
+}
+
+#bha h1{
+    font-size: 1.4em;
+    font-weight: 800;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding-top: 50px;
+}
+
+#bha p{
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100vw;
+    padding: 20px;
+}

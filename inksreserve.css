@@ -1,0 +1,181 @@
+#reserve-part{
+    height: 400px;
+    width: 100vw;
+    background-color:rgb(238, 70, 182);
+  
+}
+
+#reserve-part h1{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* 
+nodes button section */
+
+#nodes-btn{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+#nodes-btn button{
+    margin: auto;
+    height: 65px;
+    width: 35vw;
+    background: linear-gradient(90deg,#e00be0,#ff00ff,#ff00ff);
+    border-radius: 15px;
+    outline:none;
+    border-style:dashed;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all 2s;
+}
+
+
+#nodes-btn button:hover{
+    background: linear-gradient(90deg,#ff00ff,#dd06dd,#e00be0);
+    border-style:outset;
+    transition: all 2s;
+}
+
+
+.sub-btn{
+    height: 35px;
+    width: auto;
+    padding: 8px;
+    background-color: #ffffff;
+    color: #dd06dd;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+/* 
+road map section */
+
+#road-map{
+    height:auto;
+    width: 100vw;
+    margin: auto;
+    padding: auto;
+    
+}
+
+#road-map h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    color: #000;
+}
+
+
+#road-map p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+    color: #222;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+/* coin information section */
+
+
+#coin-inform h1{
+text-align: center;
+font-size: 2em;
+font-weight: 700;
+color: #000;
+margin-bottom: 30px;
+}
+
+#coin-inform h2{
+    padding-left:20px;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+
+}
+
+#coin-inform p{
+    padding-left: 20px;
+    color: #222;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#coin-inform p span{
+    color: #aaa;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    
+#coin-inform h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 80px;
+    }
+    
+#coin-inform h2{
+    padding-left:80px;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+
+}
+
+#coin-inform p{
+    padding-left: 80px;
+    color: #222;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+#coin-inform p span{
+    color: #aaa;
+}
+}
+
+
+
+/* 
+contact useful links section */
+
+
+#useful-link p{
+    padding-left: 30px;
+    padding-right:30px;
+    margin-top: 30px;
+}
+
+#useful-link h1{
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+
+#useful-link h1{
+ padding-left: 30px;   
+}
+
+
+
+
+

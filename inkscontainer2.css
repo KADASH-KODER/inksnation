@@ -1,0 +1,842 @@
+
+/* 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#devices-node{
+    margin-top: 10vh;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color:transparent;
+	font-family: "Montserrat";
+}
+
+
+.container {
+	min-width: 300px;
+	min-height: 500px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+
+
+.container1 {
+    position: absolute;
+	min-width: 300px;
+	min-height: 500px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
+    left: 500px;
+}
+
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.content {
+	transform: translatez(70px) scale(0.8);
+	line-height: 1.5em;
+}
+.content h1 {
+	position: relative;
+}
+.content p {
+	margin-top: 2px;
+	line-height: 2em;
+}
+.content h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	background-color: rgb(238, 235, 51);
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.front h1{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top:30vh;
+    margin-bottom:20vh;
+    font-weight: 900;
+}
+
+#front-p{
+    font-size: 2.3em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.front {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScI-3OdkXXGh-jzUBbW5AwFYyxxBfHXuwZkQ&usqp=CAU);
+}
+.back {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 5px;
+	background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+}
+.container:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+
+.container1:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+
+
+.back h1 {
+	margin: 0;
+}
+/* my button style  */
+/* .btn-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #fff;
+	transition: 0.35s ease-in-out;
+    font-family: "Montserrat";
+    
+}
+
+.btn-mode:hover {
+	background-color: #fff;
+	color: #122;
+} */
+.team-body{
+  font-family: tahoma;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 550px;
+}
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #ff00ee;
+  
+  
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height:0%;
+  border-radius: 50%;
+  background-color: #ff00ee;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ff00ee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .name{
+  color: #ff00ee;
+}
+
+.our-team .work {
+  display: block;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: capitalize;
+  background-color:#ff00ee ;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color:#ff00ee;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color:#ff00ee;
+  background-color: #f7f5ec;
+}
+@media only screen and (min-width: 768px) {
+.team-body{
+  font-family: tahoma;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 250px;
+  padding-top: 50px;
+}
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #ff00ee;
+  
+  
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height:0%;
+  border-radius: 50%;
+  background-color: #ff00ee;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ff00ee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .name{
+  color: #ff00ee;
+}
+
+.our-team .work {
+  display: block;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: capitalize;
+  background-color:#ff00ee ;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color:#ff00ee;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color:#ff00ee;
+  background-color: #f7f5ec;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#nodes{
+    display: none;
+} */
+
+
+
+
+@media only screen and (min-width: 768px) {
+     
+    #devices-node{
+        display: none;
+    }
+
+    /* #nodes{
+        display: flex;
+        justify-content: space-evenly;
+    
+        margin-top: 50px;
+        width: 100vw;
+        height:auto;
+        background: linear-gradient(170deg,#fff 30%,#ff00ff 70%);
+        
+    }
+    
+
+
+
+    #pack,  #pack1,  #pack2, #pack4{
+        transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
+        height: auto;
+        width: 20vw;
+        border-radius: 20px;
+        background-color:rgb(117, 12, 103);
+        margin: auto;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    
+  #pack:hover{
+    transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  } 
+
+  #pack1:hover{
+    transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  } 
+  #pack2:hover{
+    transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  } 
+  #pack4:hover{
+    transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  } 
+
+
+
+    #packhead{
+        
+        height:180px ;
+        width:17vw ;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    #pack{
+        height: auto;
+        
+        max-width: 350px;
+        background-color:rgb(117, 12, 103);
+        margin: auto;
+        border: 5px solid  #cd7f32;
+        border-bottom:30px solid #cd7f32  ;
+        overflow: hidden;
+    }
+    
+   
+    
+    
+    #pack1 h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        color: #C0C0C0;
+        text-align: center;
+    }
+
+    #packhead h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        color: #cd7f32;
+        text-align: center;
+    }
+    
+    
+    #packhead p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 2.2em;
+        font-weight: 800;
+        color: #000;
+        text-align: center;
+        margin-top:15px;
+    }
+    
+    #packhead p sub {
+        color: rgb(16, 162, 230);
+        font-size: 1.0em;
+    }
+    
+    .packcheck{
+        font-size: 0.8em;
+        color: #fff;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 5px;
+        padding:10px;
+    }
+    
+    .packicon{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #cd7f32;
+    
+    }
+    
+    
+    
+    #pack1{
+        max-width: 350px;
+        height: auto;
+        
+        
+        margin: auto;
+        border: 5px solid  #C0C0C0;
+        border-bottom:30px solid #C0C0C0  ;
+        overflow: hidden;
+    }
+    
+    
+    .packicon1{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #C0C0C0;
+    
+    }
+    
+    
+    #pack1 h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        color: #C0C0C0;
+        text-align: center;
+    }
+    
+    
+    #pack2{
+        max-width: 350px;
+        height: auto;
+        
+        
+        margin: auto;
+        border: 5px solid  #ffd700;
+        border-bottom:30px solid #ffd700 ;
+        overflow: hidden;
+    }
+    
+    
+    .packicon2{
+        font-size: 1.5em;
+        font-weight: 700;
+        color:  #ffd700;
+    
+    }
+    
+    
+    #pack2 h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        color: #ffd700;
+        text-align: center;
+    }
+    
+    
+ 
+    #pack4{
+        height: auto;
+        
+        max-width: 350px;
+        background-color:rgb(117, 12, 103);
+        margin: auto;
+        border: 5px solid  #b9f2ff;
+        border-bottom:30px solid #b9f2ff  ;
+        overflow: hidden;
+    }
+        
+    
+    #pack4 h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        color:  #b9f2ff;
+        text-align: center;
+    }
+    
+    
+
+
+
+
+    .packicon4{
+        font-size: 1.5em;
+        font-weight: 700;
+        color:  #b9f2ff;
+    
+    }
+     */
+
+/* 
+
+     <section id="nodes">
+
+     <div id="pack">
+       <div id="packhead">
+         <h1>BRONZE</h1>
+     
+         <p>NGN 1000 <sub>$3</sub></p>
+       </div>
+     
+       <p class="packcheck">
+         <span class="packicon"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         ALL BENEFITS ARE IN PinKoin
+       </p>
+     
+       
+       <p class="packcheck">
+         <span class="packicon"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         SIGNUP BONUS (Pinkoin Grant ₦2,640,000 ($7,543) worth of PinKoin)
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Monthly Pinkoin Salary ₦120,000 ($342) worth of PinKoin
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Monthly Pinkoin Salary ₦120,000 ($342) worth of PinKoin
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Monthly Pinkoin Salary ₦120,000 ($342) worth of PinKoin
+       </p>
+     
+     
+     
+     
+     
+     </div>
+     
+     
+     
+     <div id="pack1">
+       <div id="packhead">
+         <h1>SILVER</h1>
+     
+         <p>NGN 10,000 <sub>$30</sub></p>
+       </div>
+     
+       <p class="packcheck">
+         <span class="packicon1"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         ALL BENEFITS ARE IN PinKoin
+       </p>
+     
+       
+       <p class="packcheck">
+         <span class="packicon1"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         SIGNUP BONUS (Pinkoin Grant ₦6,740,000 ($19,257 )worth of PinKoin)
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon1"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Monthly Pinkoin Salary ₦180,000 ($514)worth of PinKoin
+     
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon1"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Usage of all funds in PinKoin will be active by August 12th, 2020
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon1"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         August 12th 2020 Benefits
+       </p>
+     
+     
+     
+     
+     
+     </div>
+     
+     
+     
+     <div id="pack2">
+       <div id="packhead">
+         <h1>GOLD</h1>
+     
+         <p>NGN 100,000 <sub>$300</sub></p>
+       </div>
+     
+       <p class="packcheck">
+         <span class="packicon2"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         ALL BENEFITS ARE IN PinKoin
+       </p>
+     
+       
+       <p class="packcheck">
+         <span class="packicon2"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         SIGNUP BONUS (Pinkoin Grant ₦12,720,000 ($36,343) worth of PinKoin)
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon2"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Monthly Pinkoin Salary ₦240,000($686) worth of PinKoin
+     
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon2"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Usage of all funds in PinKoin will be active by August 12th, 2020
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon2"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         August 12th 2020 Benefits
+       </p>
+     
+     
+     
+     
+     
+     </div>
+     
+     
+     
+     
+     
+     <div id="pack4">
+       <div id="packhead">
+         <h1>DIAMOND</h1>
+     
+         <p>NGN 1,000,000 <sub>$300</sub></p>
+       </div>
+     
+       <p class="packcheck">
+         <span class="packicon4"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         ALL BENEFITS ARE IN PinKoin
+       </p>
+     
+       
+       <p class="packcheck">
+         <span class="packicon4"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         SIGNUP BONUS (Pinkoin Grant ₦12,720,000 ($36,343) worth of PinKoin)
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon4"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Monthly Pinkoin Salary ₦240,000($686) worth of PinKoin
+     
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon4"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         Usage of all funds in PinKoin will be active by August 12th, 2020
+       </p>
+     
+        
+       <p class="packcheck">
+         <span class="packicon4"> <i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+         August 12th 2020 Benefits
+       </p>
+     
+     
+     
+     
+     
+     </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+       </section>   */
+
+
+}
+

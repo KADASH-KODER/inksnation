@@ -1,0 +1,314 @@
+::-moz-selection {
+    background-color: transparent;
+    color:transparent;
+}
+
+::selection {
+  user-select: none;
+}
+
+body{
+    overflow-x:scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    height:50px;
+    max-height:20vh;
+    width:100vw;
+    background: linear-gradient( 210deg, rgb(238, 70, 182) 30%, rgb(238, 70, 182) 70%);
+    display:flex;
+    justify-content:space-between;
+    position:fixed;
+    top: 0px;
+    z-index:999; 
+    border-bottom: 3px solid #fff;
+                                                           
+}
+
+#headerlist{
+    display:none;
+   
+}
+
+
+#headerlist span:hover{
+    padding-bottom: 10px;
+
+}
+
+#headerlist span{
+    font-size: 1em;
+    color:#fff;
+    height:5vh ;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: auto;
+    font-weight:650;
+    margin: auto;
+    transition: all 1.5s;
+} 
+
+header span{
+    margin:10px;
+    }
+    
+header span h1{
+       font-size:1.5em;
+       text-transform:uppercase;
+       margin-top:6px;
+   } 
+header .fa{
+    color:#fff;
+    font-size:1.5em;
+    
+} 
+
+
+@media only screen and (min-width: 768px) {
+
+header .fa{
+    display: none;
+    color:#fff;
+    font-size:1.5em;
+    
+}
+
+#headerlist{
+    display:inline-block;
+    
+}
+
+}   
+
+
+/* 
+
+#loader{
+ position:absolute;                                    
+ display:none ;                                                   
+ height:100%;                                                                                         
+ width:100%;
+ background-color:#093c9b; 
+  padding-top:20%;
+  
+   }
+   
+#loader-con{
+    display:block;
+    height:40vh;
+    max-height:150px;
+    max-width:150px;
+    width:40vw;
+    border-radius:50%;
+    border:2px solid #fff;
+   
+ 
+    
+}
+
+#loader-word h1{
+    font-size:1.6em;
+    color:#d4af37;
+    text-align:center ;
+    font-weight:700; 
+    font-family:Megrim;
+
+}
+
+#p{
+    color:#ff00ff;
+    font-weight:900;
+    font-size:2em;
+     text-transform:uppercase ;
+} */
+
+
+
+    /* front page part 1 section */
+
+#part1{
+    height:auto;
+    width:100%;
+    min-height: 100vh;
+    margin-top:5vh;
+   background:transparent ;
+    background-image: url(https://inksnation.io/pinkoin/animation.gif);
+    background-position: center;
+    background-position-y:50vh ;
+    background-size:contain ;
+    background-repeat: no-repeat;
+    z-index: 5;
+    
+    
+}
+
+#part1 h1{
+    font-size:1.5em;
+    text-align:center;
+    color:#fff;
+    z-index: 5;
+    margin-bottom:20px ;
+    text-transform: uppercase;
+    padding:20px;
+    font-weight: 700;
+}
+
+ 
+#part1 p{
+    z-index: 5;
+    font-size:2.5em;
+    text-align:center;
+    color:rgb(250, 7, 7);
+    text-transform: uppercase;
+    padding:10px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ 
+#timelinecon{
+    z-index: 5;
+    display:block ;
+    height:5vh;
+    width:50vw;
+    border-radius: 20px;
+    border:2px solid #ff00ff ;
+    margin:auto ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+button{
+    border: none;
+}
+
+#btncon{
+    font-size: 1em;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:5vw ;
+    margin-right:5vw ;
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+
+#btncon1{
+    font-size: 1em;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    margin-left:5vw ;
+    margin-right:5vw ;
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.btn1{
+    height:50px ;
+    width:130px ;
+    background-color:#000;
+    margin:auto ;
+    border-radius: 50px;
+}
+
+
+
+.btn2{
+    height:50px ;
+    width:130px ;
+    background-color:#fff;
+    color: rgb(255, 4, 171) ;
+    margin:auto ;
+    border-radius:50px;
+}
+
+
+
+#wave{
+    position: absolute;
+    left: 0;
+    bottom:-30px;
+    z-index:1 ;
+     display: block;
+       
+        }
+
+
+        /* front page part1 section screen media */
+
+@media only screen and (min-width: 768px) {
+   #part1-con{
+       position: absolute;
+       top: 20vh;
+       left: -200px;
+   }
+
+    #btncon{
+        margin-left:20vw ;
+        margin-right:20vw ;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    
+    #btncon1{
+        margin-left:20vw ;
+        margin-right:20vw ;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+.btn1{
+    height:50px ;
+    width:160px ;
+    
+    margin:auto ;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 10px;
+}
+
+
+
+.btn2{
+    height:50px ;
+    width:160px ;
+    
+    margin:auto ;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+
+
+#part1{
+    height:100vh;
+    width:100%;
+    
+    background-image: url(https://inksnation.io/pinkoin/animation.gif);
+    background-position: center;
+    background-size:contain ;
+    background-repeat: no-repeat;
+    z-index:1;
+    
+    
+}
+#wave{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index: -1;
+}
+
+
+
+}

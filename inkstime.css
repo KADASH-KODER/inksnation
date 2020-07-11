@@ -1,0 +1,73 @@
+
+
+
+#clockdiv{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    justify-content: space-around;
+    max-width: 80vw;
+    font-weight: 700;
+    z-index: 5;
+}
+
+#clockdiv > div{
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    background-color:rgb(16, 180, 230);
+    display: inline-block;
+    
+    transition:all 2s ;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background-color:#fff; 
+    display: inline-block;
+    color: #f00;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+
+#clockdiv > div:hover{
+    transform: scale(1.2) rotateY(360deg);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    #clockdiv{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #fff;
+        display: flex;
+        font-weight: 100;
+        text-align: center;
+        font-size: 25px;
+        margin-left:23vw ;
+        margin-right:23vw ;
+        justify-content: space-around;
+        max-width: 60vw;
+        font-weight: 700;
+    
+    }
+    
+
+}
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+.desktop-mini-container{
+    display: none;
+}
+
+#minipage .container{
+  
+    height: 100px;
+    width: 100vw;
+    margin: auto;
+    border-bottom: 3px solid rgb(255, 4, 171);
+    
+}
+
+
+
+
+.con-container {
+    width: 100vw;
+    background: transparent;
+}
+#con-container-carousel-inner{
+    height: 100px;
+    width: 100vw;
+   margin: auto;
+ 
+}
+
+#con-container-carousel-inner .item{
+    margin: auto;
+    width: 100vw;
+    background-color: rgb(247, 243, 246);
+}
+
+
+ .carousel-control{
+    
+    color: #ff00ff;
+}
+.carousel-indicators {
+    margin-bottom: -10px;
+}
+.carousel-indicators li{
+   border:2px solid #ff00ff;
+   margin-bottom: -5px;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+.mini-container{
+    display:none ;
+}
+
+.desktop-mini-container{
+    display:flex;
+    margin: auto;
+    justify-content: space-evenly;
+    height:100px;
+
+}
+
+
+.desktop-mini-container div{
+    height: 150px;
+    width: 30vh;
+    margin:auto ;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
